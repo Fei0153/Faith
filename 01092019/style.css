@@ -1,0 +1,31 @@
+#container1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #FF0066;
+    font-size: 1rem;
+    width: 10%;
+    border: solid;
+    box-shadow: 0 20px 30px -10px;
+}
+
+#container2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #FF0066;
+    font-size: 1rem;
+    width: 10%;
+    border-radius: 50%;
+    border: solid;
+}
+.sample{
+    color: Blue;
+}
+a[href$=".pdf"]{
+    background: url("../img/pdf.png");
+}
+
+
+.intro::first-letter{
+    float: left; font-size: 100px; margin: 10px;)
+}
+
+a.link {color:#ff0000;}
+a.visted {color: #ff5500;}
