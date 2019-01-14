@@ -1,0 +1,124 @@
+﻿body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: normal;
+    color: #111111;
+    background-color: #fff;
+    background: url("photo/girl.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: bottom;
+    margin: auto;
+}
+
+#wrapper {
+    width: auto;
+    margin: auto auto auto 5%;
+    max-width: 40rem;
+    float:left;
+    background-color: #ffffff5e;
+}
+
+#nav {
+    width: 100%;
+}
+    ul {
+        width: 100%;
+        list-style-type: none;
+        overflow: hidden;
+        margin: 0px;
+        padding: 0px;
+        background-color: #1f1f1f;
+    }
+    li {
+        float: left;
+    }
+
+    li a {
+        width: 100%;
+        display: inline-block;
+        text-align: center;
+        padding: 0.8rem 3rem;
+        color: #ffffff;
+        text-decoration: none;
+    }
+
+   li a:hover {
+        background-color: #ff5e00;
+        color: #000000;
+    }
+   li a.active {
+        background-color: #ff5e00;
+        color: #ffffff;
+    }
+   li.left {
+        float: left;
+    }
+
+    @media screen and (max-width: 40rem){
+        li.left, li {
+            width: 100%;
+            float: none;
+            display: block;
+        }
+    }
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 95%;
+}
+
+.image{
+    border: #1f1f1f 2px solid;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+#content1 { 
+    margin: 2rem auto;
+    padding: auto;
+    width: 100%;
+}
+
+#content2{
+    margin: 2rem auto;
+    padding: auto;
+    width: 100%;
+}
+
+#content3{
+    margin: 2rem auto;
+    padding: auto auto 50% auto;
+    width: 100%;
+
+}
+
+a[href$=".pdf"]{
+    color: #ff0000;
+}
+
+a:hover{
+    color: #ff8800;
+}
+
+a:active{
+    color: #91ff00;
+}
+
+th, td{
+    padding: 10px 10px;
+    align-items: center; 
+}
+
+#footer {
+    width: 100%;
+    padding: 10px 15px;
+    background-color: #1f1f1f;
+    color: #ffffff;
+    position: fixed;
+    bottom: 0;
+    float:left;
+}
