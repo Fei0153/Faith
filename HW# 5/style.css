@@ -1,0 +1,43 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+#header {
+    margin: 0 auto;
+    max-width: 100%;
+    padding: 1rem 5rem;
+    text-align: center;
+    background-color: rgb(24, 24, 24);
+    color: rgb(230, 230, 230);
+}
+
+#containerOne {
+    float: left;
+    width: 60rem;
+    max-width: 100%;
+    padding: 1rem 1rem;
+    margin: 1rem auto;
+}
+
+#containerTwo {
+    float: left;
+    width: 20rem;
+    max-width: 100%;
+    padding: 1rem 1rem;
+    margin: 0 auto;
+}
+
+#objectOne{
+    margin: 1rem auto;
+    padding: 1rem 2rem;
+    font-size: 0.8rem;
+    background-color: rgb(231, 185, 129);
+    color: rgb(26, 26, 26);
+}
+p {
+    padding: 0 1rem; 
+}
+
+em{
+    font-size: 0.8rem;
+}

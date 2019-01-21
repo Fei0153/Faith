@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <title>Interative Button</title>
+    </head>
+
+    <body>
+        <div id="header">
+            <p><strong>• • • Buttons • • •</strong>
+                <br><em>Bassic Button samples in HTML</em></p>
+        </div>
+        
+        <div id="containerOne">
+            On this box let us change the style with the available options below. Remember to hit the button that says "Change Current Style".
+            
+            <div id="objectOne">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nulla odio, posuere vel magna ac, ornare consequat diam.
+                Praesent venenatis, libero convallis rhoncus tristique, orci purus auctor ipsum, eget ullamcorper lacus diam luctus ex.
+                Proin semper felis non diam viverra fringilla. Cras luctus condimentum porta. Aliquam turpis neque, tristique sit amet felis sit amet,
+                imperdiet congue est. Maecenas non luctus magna. Suspendisse potenti. In et mauris rutrum, vestibulum felis et, feugiat felis.
+                Nullam sed velit orci. In hac habitasse platea dictumst. Sed hendrerit, quam sit amet fringilla cursus, ipsum massa auctor dolor,
+                id sollicitudin mauris velit et risus. Cras in nulla ullamcorper, vehicula arcu quis, dapibus diam. Etiam laoreet sem sed pulvinar sodales.
+                Aenean tincidunt viverra mi. Aliquam lobortis diam id nibh tristique, eget lacinia ex tincidunt.
+                </p><p>
+                Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Phasellus ut arcu ullamcorper, euismod ipsum sit amet,
+                finibus eros. Vivamus ornare viverra nibh at aliquam. Fusce convallis tempor lacus, vitae venenatis felis pulvinar ac. Proin in purus velit.
+                Nunc nec lacinia nunc. Fusce risus orci, vulputate eget congue rutrum, gravida in mi. Mauris interdum risus ipsum, quis ultricies erat euismod vitae.
+                Donec fringilla elit nibh, ut ultrices erat sollicitudin eget.
+
+                Nulla placerat vel urna sed suscipit. Sed dignissim elementum bibendum. Fusce molestie vehicula mauris, et porta magna fermentum nec. 
+                Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In id urna nec enim pulvinar semper. Quisque varius scelerisque
+                ipsum, vel mollis justo placerat non. Donec quis enim finibus, ornare nisi ac, iaculis orci. Integer feugiat nulla vel lorem sollicitudin vehicula.
+                Nulla consequat metus ut libero bibendum cursus. Curabitur sollicitudin lacus quam, sit amet maximus sapien malesuada et. Cras semper libero nulla,
+                egestas fringilla lacus posuere non. Praesent dignissim eget est sit amet porttitor. Sed ornare aliquet tortor quis convallis. Aenean ac orci convallis
+                justo dignissim congue.
+                </p><p>
+                Nullam et velit lorem. Nullam id risus ac diam accumsan semper non in leo. Nulla egestas pretium erat, quis venenatis massa commodo non.
+                Praesent pretium, tortor id vulputate auctor, nisl ex convallis dui, nec ullamcorper justo dolor sed nibh. Donec eros risus, malesuada ut purus aliquet,
+                convallis blandit dolor. Nam at dapibus ante, quis rhoncus quam. Maecenas diam leo, hendrerit accumsan lacinia efficitur, gravida vel dui. Quisque ut
+                ullamcorper nibh. Etiam ac risus et justo tempor pulvinar id vitae ante. Suspendisse porta porta mattis.
+                </p>
+            </div>
+        </div>
+
+        <div id="containerTwo">
+            <h4><strong>Style Options</strong></h4>
+            <u>Change Font Color: </u>
+            <p> <input id="button1" type="radio" name="fontColor" value="Black"> Black
+                <input id="button2" type="radio" name="fontColor" value="Orange"> Orange
+            </p>
+            
+            <u>Change Background Color:</u>
+            <p> <input id="button3" type="radio" name="bgColor" value="Black"> White
+                <input id="button4" type="radio" name="bgColor" value="Orange"> Peach
+                
+            </p>
+
+            <input id="buttonChange" type="button" value="Change Style">
+            <input id="buttonRemove" type="button" value="Remove Text">  
+        </div>
+
+        <script>
+            
+
+            //Function to change font color and backgroundcolor
+            function handling(){
+                if (button1.checked && button3.checked){
+                    objectOne.style.color="#1d1d1d";
+                    objectOne.style.backgroundColor="#ffffff";
+                    alert('Font and Background Color has changed!');
+                }
+                else if (button2.checked && button4.checked){
+                    objectOne.style.color="#e28904";
+                    objectOne.style.backgroundColor="#e7b981";
+                    alert('Font and Background Color has changed!'); 
+                }
+
+                else if (button1.checked && button4.checked){
+                    objectOne.style.color="#1d1d1d";
+                    objectOne.style.backgroundColor="#e7b981";
+                    alert('Font and Background Color has changed!');  
+                }
+
+                else if (button2.checked && button3.checked){
+                    objectOne.style.color="#e28904";
+                    objectOne.style.backgroundColor="#ffffff";
+                    alert('Font and Background Color has changed!'); 
+                }
+
+                else{
+                    alert('Please choose an option for each to be change');
+                }
+
+               document.getElementById('button1').checked = false;
+               document.getElementById('button2').checked = false; 
+               document.getElementById('button3').checked = false; 
+               document.getElementById('button4').checked = false; 
+            }
+
+            //Function to remove Text
+            function remove(){
+                objectOne.innerHTML = '';
+                alert('Text has been removed!, Refresh page to load text');
+            } 
+
+
+            buttonChange.addEventListener ('click', handling);
+            buttonRemove.addEventListener ('click', remove);
+        </script>
+        
+    </body>
+
+</html>
