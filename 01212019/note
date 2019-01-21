@@ -1,0 +1,56 @@
+import React from 'react'
+import './App.css'
+
+class Example extends React.Component {
+  constructor() {
+    super()
+    this.state = {
+      username: 'Put your Name Here'
+    }
+  }
+
+  handleChange(e) {
+    this.setState({
+      username: e.target.value
+    })
+  }
+
+  render() {
+    return (
+      <div>
+        Hello {this.state.username}
+        <br />
+        Change Name:
+        <input 
+          type="text"
+          value={this.state.username}
+          onChange={this.handleChange.bind(this)}/>
+        </div>
+    )
+  }
+}
+
+export default Example 
+
+
+import React from 'react'
+import './App.css'
+
+class Sample extends React.Component {
+  constructor() {
+    super()
+    this.state = {
+      fruits: ['apple', 'banna', 'melon']
+      fruitCount: 3
+    }
+  }
+
+
+  render(){
+    
+    const fruitCount = this.state.fruits.length;
+    return <div>(fruitCount)</div>
+  }
+}
+
+export default Sample
